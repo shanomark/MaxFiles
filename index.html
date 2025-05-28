@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Files Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#FF7D00',
+                        dark: '#1D2939',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .text-shadow-lg {
+                text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+            }
+            .bg-blur {
+                backdrop-filter: blur(8px);
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+            .animate-pulse-slow {
+                animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+                100% { transform: translateY(0px); }
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark overflow-x-hidden">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="app-icon.png" alt="AppIcon" class="h-10 w-10 rounded-xl shadow-lg">
+                <span class="text-2xl font-bold text-white text-shadow">Max Files Manager</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-white hover:text-secondary transition-colors font-medium">Function</a>
+                <a href="#contact" class="text-white hover:text-secondary transition-colors font-medium">Contact Us</a>
+            </nav>
+            <button class="md:hidden text-white text-2xl" id="menuToggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white/90 bg-blur absolute w-full">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#features" class="text-dark hover:text-primary transition-colors font-medium py-2 border-b border-gray-100">Function</a>
+                <a href="#contact" class="text-dark hover:text-primary transition-colors font-medium py-2">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区 -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-image: url('background.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/40"></div>
+        <div class="container mx-auto px-4 pt-24 z-10 relative">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white space-y-8">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-shadow-lg">
+                        Redefine your<br><span class="text-secondary">file management</span>experience
+                    </h1>
+                    <p class="text-[clamp(1rem,2vw,1.25rem)] text-white/90 max-w-lg">
+                        With a clear page layout, you can manage your various commonly used files clearly. You can create folders, upload pictures/videos/files, and you can move/copy/delete them at any time. We provide a search function so that you can quickly find the files you want. We provide a notebook function so that you can record simple content at any time. Enjoy it!
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.apple.com" class="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 font-medium flex items-center gap-2">
+                            <i class="fa fa-download"></i>
+                            <span>Download Now</span>
+                        </a>
+                        <a href="#showcase" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 font-medium flex items-center gap-2">
+                            <i class="fa fa-play-circle"></i>
+                            <span>More Information</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="app-screenshot.png" alt="App截图" class="rounded-3xl shadow-2xl max-w-full h-auto animate-float">
+                        <div class="absolute -bottom-6 -right-6 bg-secondary text-white p-4 rounded-2xl shadow-xl">
+                            <p class="font-bold">4.9/5</p>
+                            <div class="flex text-yellow-300">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#features" class="text-white text-3xl opacity-70 hover:opacity-100 transition-opacity">
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 特点区 -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">Simple page design</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We designed a simple page for easy operation</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-light rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa fa-magic text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multiple file types support</h3>
+                    <p class="text-gray-600">Supports uploading and previewing of various file types</p>
+                </div>
+                <div class="bg-light rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Note function</h3>
+                    <p class="text-gray-600">Record the content you care about anytime, anywhere。</p>
+                </div>
+                <div class="bg-light rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa fa-paint-brush text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Built-in frequently used folders</h3>
+                    <p class="text-gray-600">Frequently used folders, convenient and clear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-light rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">email</h4>
+                                <p class="text-gray-600">shanomark@outlook.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-dark/90', 'bg-blur', 'shadow-lg');
+                navbar.classList.remove('py-4');
+                navbar.classList.add('py-2');
+            } else {
+                navbar.classList.remove('bg-dark/90', 'bg-blur', 'shadow-lg');
+                navbar.classList.remove('py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuToggle.innerHTML = '<i class="fa fa-bars"></i>';
+            } else {
+                menuToggle.innerHTML = '<i class="fa fa-times"></i>';
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // 关闭移动菜单（如果打开）
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        menuToggle.innerHTML = '<i class="fa fa-bars"></i>';
+                    }
+                    
+                    // 滚动到目标位置
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+    
