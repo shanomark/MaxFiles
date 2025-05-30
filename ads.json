@@ -11,12 +11,83 @@
   },
   {
     "id": "ca-app-pub-3940256099942544/2521693316",
-    "position": "files_native",
+    "position": "home_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "list_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "notes_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "search_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "note_edit_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "new_folder_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "folder_detail_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "back_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "list_inters",
     "isShow": true
   },
   {
     "id": "ca-app-pub-3940256099942544/4411468910",
     "position": "about_inters",
     "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "notes_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "search_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "preview_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "note_edit_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "new_folder_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "folder_detail_inters",
+    "isShow": true
   }
 ]
+
