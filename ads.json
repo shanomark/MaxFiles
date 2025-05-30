@@ -45,6 +45,11 @@
     "isShow": true
   },
   {
+    "id": "ca-app-pub-3940256099942544/2521693316",
+    "position": "choose_folder_native",
+    "isShow": true
+  },
+  {
     "id": "ca-app-pub-3940256099942544/4411468910",
     "position": "back_inters",
     "isShow": true
@@ -88,6 +93,20 @@
     "id": "ca-app-pub-3940256099942544/4411468910",
     "position": "folder_detail_inters",
     "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "choose_folder_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "copy_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-3940256099942544/4411468910",
+    "position": "move_inters",
+    "isShow": true
   }
 ]
-
