@@ -52,12 +52,12 @@
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
     "position": "back_inters",
-    "isShow": false
+    "isShow": true
   },
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
     "position": "list_inters",
-    "isShow": false
+    "isShow": true
   },
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
@@ -67,7 +67,7 @@
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
     "position": "notes_inters",
-    "isShow": false
+    "isShow": true
   },
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
@@ -92,12 +92,12 @@
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
     "position": "folder_detail_inters",
-    "isShow": false
+    "isShow": true
   },
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
     "position": "choose_folder_inters",
-    "isShow": false
+    "isShow": true
   },
   {
     "id": "ca-app-pub-2334640401367012/1388305494",
