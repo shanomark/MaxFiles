@@ -108,5 +108,40 @@
     "id": "ca-app-pub-2334640401367012/1388305494",
     "position": "move_inters",
     "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "paywall_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "clean_result_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "similar_photos_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "similar_videos_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "similar_detail_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "similar_screenshots_inters",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1388305494",
+    "position": "screenshots_preview_inters",
+    "isShow": true
   }
 ]
