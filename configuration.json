@@ -1,4 +1,5 @@
 {
   "needCacheInters": false,
-  "needCacheAppOpen": false
+  "needCacheAppOpen": false,
+  "openAdShowinWillEnterFunc": false
 }
