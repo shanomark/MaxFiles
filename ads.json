@@ -25,6 +25,16 @@
     "isShow": false
   },
   {
+    "id": "ca-app-pub-2334640401367012/8920145300",
+    "position": "app_open_system_notice",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/8920145300",
+    "position": "app_open_photos_suth",
+    "isShow": true
+  },
+  {
     "id": "ca-app-pub-2334640401367012/1275016626",
     "position": "home_native",
     "isShow": true
@@ -62,6 +72,36 @@
   {
     "id": "ca-app-pub-2334640401367012/1275016626",
     "position": "choose_folder_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1275016626",
+    "position": "file_home_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1275016626",
+    "position": "screenshots_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1275016626",
+    "position": "clean_result_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1275016626",
+    "position": "similar_detail_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1275016626",
+    "position": "similar_photos_native",
+    "isShow": true
+  },
+  {
+    "id": "ca-app-pub-2334640401367012/1275016626",
+    "position": "similar_videos_native",
     "isShow": true
   },
   {
